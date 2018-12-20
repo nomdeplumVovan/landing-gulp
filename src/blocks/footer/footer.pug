@@ -1,0 +1,12 @@
+mixin footer(modifier)
+  footer
+    .footer&attributes(attributes)
+      .footer__subscribe
+        p Learn how to meet the prettiest brides
+        form.footer__subscribe-inputs
+          input(type="email", name="", placeholder='Enter email here', pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" )
+          input.button(type="submit", value="Subscribe") 
+      .footer__items
+        a.footer__items-link(href='#') ABOUT US
+        a.footer__items-link(href='#') CONTACT US
+        a.footer__items-link(href='#')  ADVERTISER DISCLOSURE
