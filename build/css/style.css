@@ -219,11 +219,6 @@ nav {
   width: 24px;
   height: 24px;
   margin-right: 15px; }
-  .ham:hover .nav__mobile {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
   @media (max-width: 768px) {
     .ham {
       display: -webkit-box;
@@ -231,7 +226,10 @@ nav {
       display: -ms-flexbox;
       display: flex; } }
   .ham .nav__mobile {
-    display: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -252,6 +250,17 @@ nav {
     background: #000;
     width: 100vw;
     height: 100vh; }
+    .ham .nav__mobile-exit {
+      background-image: url(../img/close.png);
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover;
+      position: absolute;
+      z-index: 11;
+      right: 30px;
+      top: 80px;
+      width: 20px;
+      height: 20px; }
     .ham .nav__mobile .nav__link {
       font-family: Muli;
       font-style: normal;
@@ -265,6 +274,9 @@ nav {
       margin: 20px 0; }
       .ham .nav__mobile .nav__link:hover {
         color: #D0021B; }
+
+.closed {
+  display: none; }
 
 main {
   display: -webkit-box;
