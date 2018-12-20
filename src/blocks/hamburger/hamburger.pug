@@ -1,7 +1,7 @@
 mixin hamburger(modifier)
-  .ham(id='open')
+  .ham(id='open', onclick="toggleMenu()")
     .closed(id='closeMenu')
-        .nav__mobile-exit(id='closed')
+        .nav__mobile-exit(id='closed', onclick="toggleMenu()" )
         a.nav__link(href="#") TOP 5 SITES
         a.nav__link(href="#") UKRAINIAN DATING SITES
         a.nav__link(href="#") RUSSIAN DATING SITES
