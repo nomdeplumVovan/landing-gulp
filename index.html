@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css?version=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <meta name="format-detection" content="telephone=no">
-    <script src="js/scripts.js?version=1" defer></script>
   </head>
   <body>
       <header>
@@ -26,9 +25,9 @@
                   <div class="nav__links"><a class="nav__link" href="#">TOP 5 SITES</a><a class="nav__link" href="#">UKRAINIAN DATING SITES</a><a class="nav__link" href="#">RUSSIAN DATING SITES</a><a class="nav__link" href="#">ASIAN DATING SITES</a><a class="nav__link" href="#">BLOG</a></div>
                 </div>
               </nav>
-              <div class="ham" id="open">
+              <div class="ham" id="open" onclick="toggleMenu()">
                 <div class="closed" id="closeMenu">
-                  <div class="nav__mobile-exit" id="closed"></div><a class="nav__link" href="#">TOP 5 SITES</a><a class="nav__link" href="#">UKRAINIAN DATING SITES</a><a class="nav__link" href="#">RUSSIAN DATING SITES</a><a class="nav__link" href="#">ASIAN DATING SITES</a><a class="nav__link" href="#">BLOG</a>
+                  <div class="nav__mobile-exit" id="closed" onclick="toggleMenu()"></div><a class="nav__link" href="#">TOP 5 SITES</a><a class="nav__link" href="#">UKRAINIAN DATING SITES</a><a class="nav__link" href="#">RUSSIAN DATING SITES</a><a class="nav__link" href="#">ASIAN DATING SITES</a><a class="nav__link" href="#">BLOG</a>
                 </div>
               </div>
           </div>
@@ -159,5 +158,6 @@
           <div class="footer__items"><a class="footer__items-link" href="#">ABOUT US</a><a class="footer__items-link" href="#">CONTACT US</a><a class="footer__items-link" href="#"> ADVERTISER DISCLOSURE</a></div>
         </div>
       </footer>
+    <script src="js/scripts.js?version=1" defer></script>
   </body>
 </html>
